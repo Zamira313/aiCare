@@ -1,0 +1,525 @@
+.connections{
+    padding-top: 150px;
+    padding-bottom: 200px;
+    @media #{$small_tab}{
+      padding-bottom: 140px;
+      padding-top: 70px;
+    }
+    @media #{$small_mobile}{
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
+    .mini_top_text{
+        margin-bottom: 32px;
+    }
+    .section_title{
+        margin-bottom: 12px;
+    }
+    .section_subtitle{
+        margin-bottom: 50px;
+    }
+    .connections_content{
+        max-width: 500px;
+        @media #{$small_laptop}{
+          max-width: 410px;
+        }
+        @media #{$big_tab}{
+          max-width: 100%;
+        }
+    }
+    .connections_btn{
+        color: #2E2E2E;
+        text-align: center;
+        font-family: 'Inter';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 150%; /* 24px */
+        border-radius: 58px;
+        border: 1px solid #E1EFCE;
+        background: #A9F04A;
+        padding: 14px 28px;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: max-content;
+        transition: all 0.2s ease-in;
+        @media #{$small_tab}{
+          font-size: 14px;
+          padding: 10px 25px;
+        }
+        &:hover {
+          background-color: transparent; // Slightly darker green for hover
+          color: #FDFCFD;
+          border-color: #FDFCFD;
+          path{
+            stroke: #FDFCFD;
+          }
+        }
+    }
+    .connections_block{
+        display: flex;
+        justify-content: space-between;
+        @media #{$big_tab}{
+          flex-direction: column;
+          gap: 50px;
+          align-items: center;
+        }
+    }
+    .connection_orbital{
+        background-image: url(../imgs/connection_ellipse.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        .conn_ic{
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          right: 0;
+        }
+        @media #{$small_mobile}{
+          background-size: contain;
+        }
+    }
+    .orbital{
+        border-radius: 50%;
+        position: relative;
+        border: 0.849px solid #BDBDBD;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.orbital_1{
+            width: 528px;
+            height: 528px;
+            border-color: #CECECE;
+            @media #{$small_tab}{
+              width: 370px;
+              height: 370px;
+            }
+            @media #{$small_mobile}{
+              width: 260px;
+              height: 260px;
+            }
+        }
+        &.orbital_2{
+            width: 405px;
+            height: 405px;
+            @media #{$small_tab}{
+              width: 280px;
+              height: 280px;
+            }
+            @media #{$small_mobile}{
+              width: 200px;
+              height: 200px;
+            }
+        }
+        &.orbital_3{
+            border-color: #A9F04A;
+            width: 283px;
+            height: 283px;
+            @media #{$small_tab}{
+              width: 200px;
+              height: 200px;
+            }
+            @media #{$small_mobile}{
+              width: 150px;
+              height: 150px;
+            }
+        }
+        &.orbital_4{
+            border-color: #A9F04A;
+            width: 161px;
+            height: 161px;
+            @media #{$small_tab}{
+              width: 130px;
+              height: 130px;
+            }
+            @media #{$small_mobile}{
+              width: 100px;
+              height: 100px;
+            }
+        }
+        &.orbital_5{
+            width: 73px;
+            height: 73px;
+            border-color: #A9F04A;
+            @media #{$small_tab}{
+              width: 60px;
+              height: 60px;
+            }
+        }
+    }
+
+
+    .conn_ic{
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+        @media #{$small_tab}{
+          width: 35px;
+          height: 35px;
+        }
+        @media #{$small_mobile}{
+          width: 25px;
+          height: 25px;
+        }
+        &.conn_ic_1{
+            animation: circle 10s linear infinite;
+        }
+        &.conn_ic_2{
+            animation: circleTwo 20s linear infinite;
+        }
+        &.conn_ic_3{
+            animation: circleThree 30s linear infinite;
+        }
+        &.conn_ic_4{
+            animation: circleFour 20s linear infinite;
+        }
+        &.conn_ic_5{
+            animation: circleFive 25s linear infinite;
+        }
+        &.conn_ic_6{
+            animation: circleSix 15s linear infinite;
+        }
+        &.conn_ic_7{
+            animation: circleSeven 10s linear infinite;
+        }
+
+        @media #{$small_tab}{
+          &.conn_ic_1{
+            animation: circleTab 10s linear infinite;
+          }
+          &.conn_ic_2{
+              animation: circleTwoTab 20s linear infinite;
+          }
+          &.conn_ic_3{
+              animation: circleThreeTab 30s linear infinite;
+          }
+          &.conn_ic_4{
+              animation: circleFourTab 20s linear infinite;
+          }
+          &.conn_ic_5{
+              animation: circleFiveTab 25s linear infinite;
+          }
+          &.conn_ic_6{
+              animation: circleSixTab 15s linear infinite;
+          }
+          &.conn_ic_7{
+              animation: circleSevenTab 10s linear infinite;
+          }
+        }
+
+        @media #{$small_mobile}{
+          &.conn_ic_1{
+            animation: circleMob 10s linear infinite;
+          }
+          &.conn_ic_2{
+              animation: circleTwoMob 20s linear infinite;
+          }
+          &.conn_ic_3{
+              animation: circleThreeMob 30s linear infinite;
+          }
+          &.conn_ic_4{
+              animation: circleFourMob 20s linear infinite;
+          }
+          &.conn_ic_5{
+              animation: circleFiveMob 25s linear infinite;
+          }
+          &.conn_ic_6{
+              animation: circleSixMob 15s linear infinite;
+          }
+          &.conn_ic_7{
+              animation: circleSevenMob 10s linear infinite;
+          }
+        }
+
+      }
+      
+      @keyframes circle{
+        0%{
+          transform:rotate(0deg)
+                    translate(-264px)
+                    rotate(0deg);
+        
+        }
+        100%{
+          transform:rotate(360deg)
+                    translate(-264px)
+                    rotate(-360deg);
+        }
+      }
+      @keyframes circleTwo{
+        0%{
+          transform:rotate(0deg)
+                    translate(-264px)
+                    rotate(0deg);
+        
+        }
+        100%{
+          transform:rotate(-360deg)
+                    translate(-264px)
+                    rotate(360deg);
+        }
+      }
+      @keyframes circleThree{
+        0%{
+          transform:rotate(0deg)
+                    translate(-264px)
+                    rotate(0deg);
+        
+        }
+        100%{
+          transform:rotate(360deg)
+                    translate(-264px)
+                    rotate(-360deg);
+        }
+      }
+      @keyframes circleFour{
+        0%{
+          transform:rotate(0deg)
+                    translate(-202.5px)
+                    rotate(0deg);
+        
+        }
+        100%{
+          transform:rotate(360deg)
+                    translate(-202.5px)
+                    rotate(-360deg);
+        }
+      }
+      @keyframes circleFive{
+        0%{
+          transform:rotate(0deg)
+                    translate(-202.5px)
+                    rotate(0deg);
+        
+        }
+        100%{
+          transform:rotate(-360deg)
+                    translate(-202.5px)
+                    rotate(360deg);
+        }
+      }
+      @keyframes circleSix{
+        0%{
+          transform:rotate(0deg)
+                    translate(-141.5px)
+                    rotate(0deg);
+        
+        }
+        100%{
+          transform:rotate(360deg)
+                    translate(-141.5px)
+                    rotate(-360deg);
+        }
+      }
+        @keyframes circleSeven{
+            0%{
+            transform:rotate(0deg)
+                        translate(-141.5px)
+                        rotate(0deg);
+            
+            }
+            100%{
+            transform:rotate(-360deg)
+                        translate(-141.5px)
+                        rotate(360deg);
+            }
+        }
+
+
+        @media #{$small_tab}{
+
+          @keyframes circleTab{
+            0%{
+              transform:rotate(0deg)
+                        translate(-185px)
+                        rotate(0deg);
+            
+            }
+            100%{
+              transform:rotate(360deg)
+                        translate(-185px)
+                        rotate(-360deg);
+            }
+          }
+          @keyframes circleTwoTab{
+            0%{
+              transform:rotate(0deg)
+                        translate(-185px)
+                        rotate(0deg);
+            
+            }
+            100%{
+              transform:rotate(-360deg)
+                        translate(-185px)
+                        rotate(360deg);
+            }
+          }
+          @keyframes circleThreeTab{
+            0%{
+              transform:rotate(0deg)
+                        translate(-185px)
+                        rotate(0deg);
+            
+            }
+            100%{
+              transform:rotate(360deg)
+                        translate(-185px)
+                        rotate(-360deg);
+            }
+          }
+          @keyframes circleFourTab{
+            0%{
+              transform:rotate(0deg)
+                        translate(-140px)
+                        rotate(0deg);
+            
+            }
+            100%{
+              transform:rotate(360deg)
+                        translate(-140px)
+                        rotate(-360deg);
+            }
+          }
+          @keyframes circleFiveTab{
+            0%{
+              transform:rotate(0deg)
+                        translate(-140px)
+                        rotate(0deg);
+            
+            }
+            100%{
+              transform:rotate(-360deg)
+                        translate(-140px)
+                        rotate(360deg);
+            }
+          }
+          @keyframes circleSixTab{
+            0%{
+              transform:rotate(0deg)
+                        translate(-100px)
+                        rotate(0deg);
+            
+            }
+            100%{
+              transform:rotate(360deg)
+                        translate(-100px)
+                        rotate(-360deg);
+            }
+          }
+          @keyframes circleSevenTab{
+              0%{
+              transform:rotate(0deg)
+                          translate(-100px)
+                          rotate(0deg);
+              
+              }
+              100%{
+              transform:rotate(-360deg)
+                          translate(-100px)
+                          rotate(360deg);
+              }
+          }
+        }
+
+        @media #{$small_mobile}{
+
+          @keyframes circleMob{
+            0%{
+              transform:rotate(0deg)
+                        translate(-130px)
+                        rotate(0deg);
+            
+            }
+            100%{
+              transform:rotate(360deg)
+                        translate(-130px)
+                        rotate(-360deg);
+            }
+          }
+          @keyframes circleTwoMob{
+            0%{
+              transform:rotate(0deg)
+                        translate(-130px)
+                        rotate(0deg);
+            
+            }
+            100%{
+              transform:rotate(-360deg)
+                        translate(-130px)
+                        rotate(360deg);
+            }
+          }
+          @keyframes circleThreeMob{
+            0%{
+              transform:rotate(0deg)
+                        translate(-130px)
+                        rotate(0deg);
+            
+            }
+            100%{
+              transform:rotate(360deg)
+                        translate(-130px)
+                        rotate(-360deg);
+            }
+          }
+          @keyframes circleFourMob{
+            0%{
+              transform:rotate(0deg)
+                        translate(-100px)
+                        rotate(0deg);
+            
+            }
+            100%{
+              transform:rotate(360deg)
+                        translate(-100px)
+                        rotate(-360deg);
+            }
+          }
+          @keyframes circleFiveMob{
+            0%{
+              transform:rotate(0deg)
+                        translate(-100px)
+                        rotate(0deg);
+            
+            }
+            100%{
+              transform:rotate(-360deg)
+                        translate(-100px)
+                        rotate(360deg);
+            }
+          }
+          @keyframes circleSixMob{
+            0%{
+              transform:rotate(0deg)
+                        translate(-75px)
+                        rotate(0deg);
+            
+            }
+            100%{
+              transform:rotate(360deg)
+                        translate(-75px)
+                        rotate(-360deg);
+            }
+          }
+          @keyframes circleSevenMob{
+              0%{
+              transform:rotate(0deg)
+                          translate(-75px)
+                          rotate(0deg);
+              
+              }
+              100%{
+              transform:rotate(-360deg)
+                          translate(-75px)
+                          rotate(360deg);
+              }
+          }
+
+        }
+}

@@ -1,0 +1,477 @@
+.pricing{
+    background-color: #f1f1f1;
+    padding-top: 100px;
+    padding-bottom: 250px;
+    @media #{$big_tab}{
+        padding-bottom: 200px;
+    }
+    @media #{$small_tab}{
+        padding-bottom: 150px;
+    }
+    @media #{$big_mobile}{
+        padding-bottom: 120px;
+    }
+    .section_title{
+        margin-bottom: 12px;
+    }
+    .section_top_content .section_subtitle{
+        margin-bottom: 60px;
+        @media #{$small_tab}{
+            font-size: 15px;
+        }
+        @media #{$big_mobile}{
+            font-size: 13px;
+        }
+        br{
+            @media #{$small_tab}{
+                display: none;
+            }
+        }
+    }
+    .mini_top_text{
+        margin-bottom: 32px;
+        @media #{$small_tab}{
+            font-size: 10px;
+        }
+    }
+   
+    .tab-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: center;
+        width: 100%;
+        border-radius: 6px 6px 0 0;
+        background: #FFF;
+        overflow: hidden;
+        padding: 12px;
+        .tab-button {
+          flex: 1;
+          color: #101010;
+          text-align: center;
+          font-family: 'Inter';
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 150%; /* 24px */
+          cursor: pointer;
+          border: none;
+          outline: none;
+          background-color: #fff;
+          transition: all 0.3s ease-in-out;
+          padding: 8px 14px;
+          border-radius: 6px;
+          @media #{$small_tab}{
+            font-size: 14px;
+          }
+          @media #{$big_mobile}{
+            font-size: 13px;
+          }
+          &.active {
+            background: var(--Color-Text-Main, #101010);
+            color: #F7F7F7;
+            
+          }
+      
+          
+        }
+      }
+      
+      .tab-content {
+        padding-top: 24px;
+        padding-bottom: 40px;
+        background-color: #fff;
+        padding: 24px;
+        padding-bottom: 0;
+        @media #{$small_tab}{
+            padding: 10px;
+            padding-bottom: 0;
+        }
+        .content {
+          display: none;
+          &.active {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px 32px;
+            flex-wrap: wrap;
+            @media #{$small_tab}{
+                gap: 24px 10px;
+            }
+            .pricing_item {
+                background-color: #fff;
+                color: #101010;
+                padding-bottom: 32px;
+                border-radius: 12px;
+                width: calc(50% - 20px);
+                @media #{$small_tab}{
+                    width: calc(50% - 5px);
+                    padding-bottom: 20px;
+                }
+                @media #{$big_mobile}{
+                    width: 100%;
+                }
+                .pricing_item_title.mini{
+                    color: var(--Color-Text-Main, #101010);
+                    font-family: 'Inter';
+                    font-size: 19px;
+                    font-weight: 600;
+                    line-height: 120%; /* 22.8px */
+                    margin-bottom: 24px;
+                }
+                &.w_100.gorizontal_item{
+                    .card{
+                        display: flex;
+                        flex-direction: column;
+                        .gorizontal_ul{
+                            display: flex;
+                            align-items: center;
+                            gap: 24px;
+                            flex-direction: row;
+                            margin: 0;
+                            @media#{$big_tab}{
+                                gap: 20px;
+                                flex-wrap: wrap;
+                            }
+                            li{
+                                color: var(--Color-Text-Main, #101010);
+                                font-family: 'Inter';
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 150%; /* 21px */
+                                display: flex;
+                                align-items: center;
+                                gap: 4px;
+                                @media#{$big_tab}{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.blue_card{
+                    background-color: #BEE3F3;
+                    padding: 32px;
+                    @media#{$big_tab}{
+                        padding: 32px 24px;
+                    }
+                    @media #{$small_tab}{
+                        padding: 20px 10px;
+                    }
+                    .card .btn-signup{
+                        color: #F7F7F7;
+                        background-color: #101010;
+                    }
+                    .card h3{
+                        background-color: #fff;
+                    }
+                    .card ul{
+                        gap: 12px;
+                        @media #{$small_tab}{
+                            gap: 7px;
+                        }
+                    }
+                    .pricing_item_bottom{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 14px;
+                        @media #{$big_mobile}{
+                            align-items: start;
+                            justify-content: start;
+                            margin-top: 25px;
+                        }
+                        p{
+                            color: var(--Color-Text-Main, #101010);
+                            text-align: center;
+                            font-family: Inter;
+                            font-size: 21px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 150%; /* 31.5px */
+                            @media #{$big_tab}{
+                                font-size: 18px;
+                            }
+                            @media #{$small_tab}{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(3), &.w_100{
+                    width: 100%;
+                    padding: 50px 8px;
+                    border-top: 1px solid #E7E7E7;
+                    border-bottom: 1px solid #E7E7E7;
+                    border-radius: 0;
+                    .card .btn-signup{
+                        max-width: max-content;
+                    }
+                    .small_p{
+                        color: #101010;
+                        font-family: 'Inter';
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 150%; /* 21px */
+                        margin-top: 14px;
+                        @media#{$big_tab}{
+                            font-size: 13px;
+                        }
+                    }
+                    .card{
+                        flex-direction: row;
+                        align-items: start;
+                        @media #{$small_tab}{
+                            flex-wrap: wrap;
+                            gap: 20px;
+                        }
+                        .pricing_item_right{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: end;
+                            @media #{$small_tab}{
+                                align-items: start;
+                            }
+                        }
+                    }
+                }
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 100%;
+                    position: relative;
+            
+                    h3 {
+                        color: #101010;
+                        font-family: 'Inter';
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 150%; /* 21px */
+                        letter-spacing: 0.84px;
+                        text-transform: uppercase;
+                        border-radius: 99px;
+                        background: #F1F1F1;
+                        padding: 4px 12px;
+                        max-width: max-content;
+                        margin-bottom: 24px;
+                        @media#{$big_tab}{
+                            font-size: 12px;
+                        }
+                        @media #{$small_tab}{
+                            font-size: 10px;
+                        }
+                    }
+            
+                    .price {
+                        color: #101010;
+                        font-family: 'Inter';
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 150%; /* 24px */
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                        @media #{$small_tab}{
+                            font-size: 14px;
+                            gap: 10px;
+                        }
+                        span {
+                            color: #101010;
+                            font-family: 'Trap';
+                            font-size: 40px;
+                            font-weight: 600;
+                            line-height: 100%; /* 48px */
+                            &.mini_sp{
+                                font-size: 23px;
+                                @media#{$big_tab}{
+                                    font-size: 21px;
+                                }
+                                @media #{$small_tab}{
+                                    font-size: 19px;
+                                }
+                            }
+                            @media#{$big_tab}{
+                                font-size: 35px;
+                            }
+                            @media #{$small_tab}{
+                                font-size: 30px;
+                            }
+                        }
+                        p {
+                            color: #101010;
+                            font-family: 'Inter';
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 150%; /* 24px */
+                            @media#{$big_tab}{
+                                font-size: 14px;
+                            }
+                            @media #{$small_tab}{
+                                font-size: 12px;
+                            }
+                            @media #{$big_mobile}{
+                                br{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+            
+                    ul {
+                        display: flex;
+                        gap: 16px;
+                        flex-direction: column;
+                        margin-top: 32px;
+                        margin-bottom: 32px;
+                        @media #{$small_tab}{
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            gap: 10px;
+                        }
+                        li {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                            position: relative;
+                            color: #101010;
+                            font-family: 'Inter';
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 150%; /* 24px */
+                            @media#{$big_tab}{
+                                font-size: 14px;
+                            }
+                            @media #{$small_tab}{
+                                font-size: 12px;
+                                gap: 4px;
+                            }
+                            a{
+                                display: flex;
+                            }
+                            .hover-info {
+                                position: relative;
+                                cursor: pointer;
+                                &:hover .tooltip {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+            
+                                .tooltip {
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    background-color: #333;
+                                    color: white;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                    position: absolute;
+                                    top: 0;
+                                    right: 100%;
+                                    width: 200px;
+                                    text-align: left;
+                                    z-index: 10;
+                                    transition: opacity 0.3s ease;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+            
+                    .btn-signup {
+                        color: #101010;
+                        text-align: center;
+                        font-family: 'Inter';
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 150%; /* 24px */
+                        text-decoration: none;
+                        transition: background-color 0.4s;
+                        border-radius: 58px;
+                        background: #A9F04A;
+                        padding: 14px 28px;
+                        margin-top: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @media#{$big_tab}{
+                            padding: 10px 20px;
+                            font-size: 14px;
+                        }
+                        @media #{$small_tab}{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+          }
+        }
+      }
+
+    .do_more_block{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #fff;
+        .do_more_item{
+            padding: 32px;
+            width: 50%;
+            border-bottom: 1px solid #E7E7E7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 12px;
+            min-height: 250px;
+            @media #{$small_tab}{
+                padding: 20px;
+            }
+            @media #{$big_mobile}{
+                width: 100%;
+                min-height: 200px;
+            }
+            h1{
+                color: var(--Color-Text-Main, #101010);
+                font-family: 'Trap';
+                font-size: 60px;
+                font-weight: 500;
+                line-height: 120%; /* 72px */
+                @media#{$big_tab}{
+                    font-size: 48px;
+                }
+                @media #{$small_tab}{
+                    font-size: 35px;
+                }
+            }
+            h5{
+                color: var(--Color-Text-Main, #101010);
+                font-family: 'Inter';
+                font-size: 21px;
+                font-weight: 600;
+                line-height: 150%; /* 31.5px */
+                @media#{$big_tab}{
+                    font-size: 20px;
+                }
+                @media #{$small_tab}{
+                    font-size: 17px;
+                }
+            }
+            p{
+                color: var(--Color-Text-Main, #101010);
+                font-family: 'Inter';
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 150%; /* 24px */
+                @media#{$big_tab}{
+                    font-size: 14px;
+                }
+                @media #{$small_tab}{
+                    font-size: 13px;
+                }
+            }
+            &:nth-child(2n - 1){
+                border-right: 1px solid #E7E7E7;
+                @media #{$big_mobile}{
+                    border-right: none;
+                }
+            }
+        }
+    }
+      
+}

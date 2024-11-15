@@ -1,0 +1,98 @@
+.get_in_touch{
+    padding-bottom: 140px;
+    padding-top: 125px;
+    @media #{$small_tab}{
+        padding-bottom: 70px;
+        padding-top: 70px;
+    }
+    @media #{$small_mobile}{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .get_in_touch_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // height: 560px;
+        position: relative;
+        .get_in_touch_bg{
+            position: absolute;
+            z-index: 4;
+            bottom: -110px;
+            @media #{$small_tab}{
+                bottom: 40px;
+                max-width: 100%;
+            }
+            @media #{$big_mobile}{
+                bottom: 90px;
+            }
+            @media #{$small_mobile}{
+                bottom: 104px;
+            }
+        }
+    }
+    .get_in_touch_title{
+        font-size: 190px;
+        font-weight: 500;
+        line-height: 120%; /* 228px */
+        font-family: 'Trap';
+        color: transparent;
+        -webkit-text-stroke: 2px #9AE535; /* Outline color */
+        position: relative;
+        background: linear-gradient(0deg, #9AE535, transparent 30%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        position: relative;
+        z-index: 3;
+        opacity: .7;
+        @media #{$small_tab}{
+            font-size: 140px;
+        }
+        @media #{$big_mobile}{
+            font-size: 95px;
+            -webkit-text-stroke-width: 1px;
+        }
+        @media #{$small_mobile}{
+            font-size: 90px;
+        }
+    }
+    .mini_top_text{
+        margin-bottom: 50px;
+    }
+    .section_subtitle{
+        margin-bottom: 50px;
+        text-align: center;
+        position: relative;
+        z-index: 5;
+        @media #{$small_mobile}{
+            font-size: 13px;
+        }
+    }
+    .get_in_touch_btn{
+        color: #2E2E2E;
+        text-align: center;
+        font-family: 'Inter';
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        border-radius: 10px;
+        background: #A9F04A;
+        padding: 16px 32px;
+        max-width: max-content;
+        position: relative;
+        z-index: 5;
+        transition: all ease-in 0.2s;
+        border: 1px solid transparent;
+        @media #{$small_tab}{
+            font-size: 15px;
+            padding: 12px 28px;
+        }
+        &:hover{
+            background: #101010;
+            color: #A9F04A;
+            border-color: #A9F04A;
+        }
+    }
+}
+
+

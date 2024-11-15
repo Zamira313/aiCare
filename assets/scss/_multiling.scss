@@ -1,0 +1,160 @@
+.multiling{
+    padding-bottom: 150px;
+    padding-top: 125px;
+    @media #{$small_tab}{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    @media #{$small_mobile}{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .mini_top_text{
+        margin-bottom: 32px;
+    }
+    .section_title{
+        margin-bottom: 16px;
+    }
+    .section_subtitle{
+        margin-bottom: 80px;
+        @media #{$small_tab}{
+            margin-bottom: 50px;
+        }
+    }
+    .multiling_block{
+        display: flex;
+        gap: 32px;
+        justify-content: space-between;
+        @media #{$small_laptop}{
+            gap: 20px;
+        }
+        @media #{$big_tab}{
+            gap: 10px;
+        }
+        @media #{$small_tab}{
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        @media #{$big_mobile}{
+            flex-wrap: wrap;
+        }
+        .multiling_item{
+            border-radius: 20px;
+            background-color: #BEE3F3;
+            padding: 40px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: calc(33.33% - 21.33px);
+            transition: all ease-in 0.4s;
+            position: relative;
+            cursor: pointer;
+            @media #{$small_laptop}{
+                width: calc(33.33% - 13.33px);
+                padding: 30px;
+            }
+            @media #{$big_tab}{
+                width: calc(33.33% - 6.66px);
+                padding: 30px 20px;
+                min-height: 360px;
+            }
+            @media #{$small_tab}{
+                width: calc(50% - 7.5px);
+            }
+            @media #{$big_mobile}{
+                width: 100%;
+                min-height: 300px;
+            }
+            .multiling_item_ic{
+                @media #{$small_tab}{
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+            &:nth-child(2){
+                background-color: #BAFA64;
+            }
+            &:last-child{
+                background-color: #F1F1F1;
+            }
+            // .multiling_item_content{}
+            .multiling_item_title{
+                color: #000;
+                font-family: 'Trap';
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 150%; /* 42px */
+                @media #{$small_laptop}{
+                    font-size: 25px;
+                    line-height: 135%;
+                }
+                @media #{$big_tab}{
+                    font-size: 21px;
+                }
+            }
+            .multiling_item_desc_hov{
+                color: #000;
+                font-family: 'Inter';
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 150%; /* 24px */
+                margin-top: 12px;
+                // height: 0;
+                transition: all ease-in 0.5s;
+                position: absolute;
+                bottom: -100%;
+                left: 0px;
+                opacity: 0;
+                max-width: 325px;
+                @media #{$small_laptop}{
+                    font-size: 15px;
+                }
+                
+            }
+            &:hover{
+                transition: all ease-in 0.5s;
+                .multiling_item_desc_hov{
+                    // height: 100%;
+                    transition: all ease-in 0.5s;
+                    bottom: 0px;
+                    position: relative;
+                    opacity: 1;
+                    left: 0;
+                }
+            }
+        }
+    }
+    &.seamless{
+        background-color: #F1F1F1;
+        .section_title{
+            color: #101010;
+            margin-bottom: 80px;
+            @media #{$small_tab}{
+                margin-bottom: 50px;
+            }
+        }
+        .mini_top_text{
+            color: #101010;
+            border-color: rgba(16, 16, 16, 0.50);
+        }
+        .multiling_block{
+            .multiling_item{
+                &:last-child{
+                    background-color: #fff;
+                }
+                .multiling_item_title{
+                    font-size: 23px;
+                    margin-bottom: 12px;
+                }
+                .multiling_item_desc_hov{
+                    position: relative;
+                    opacity: 1;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}

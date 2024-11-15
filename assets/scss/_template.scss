@@ -1,0 +1,174 @@
+.template{
+    padding-top: 200px;
+    background-image: url(../imgs/tmp_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media #{$small_tab}{
+        padding-top: 140px;
+    }
+    @media #{$small_mobile}{
+        padding-top: 100px;
+    }
+    .mini_top_text{
+        margin-bottom: 32px;
+    }
+    .section_title{
+        margin-bottom: 80px;
+    }
+    .template_block{
+        display: flex;
+        padding-bottom: 60px;
+        align-items: end;
+        gap: 70px;
+        @media #{$small_laptop}{
+            gap: 35px;
+            flex-wrap: wrap;
+        }
+        .tmp_btn{
+            color: #2E2E2E;
+            text-align: center;
+            font-family: 'Inter';
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 150%; /* 24px */
+            border-radius: 48px;
+            background: #A9F04A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: max-content;
+            padding: 14px 28px;
+            width: 190px;
+            @media #{$small_tab}{
+                font-size: 14px;
+                padding: 10px 25px;
+            }
+        }
+        .tmp_item{
+            padding-left: 24px;
+            border-left: 1px solid #474747;
+            max-width: 460px;
+            
+            &:nth-child(2){
+                max-width: 485px;
+            }
+            @media #{$small_laptop}{
+                max-width: 440px;
+                width: calc(50% - 23.33px);
+            }
+            @media #{$small_tab}{
+                width: 100%;
+                max-width: 100%;
+            }
+            @media #{$big_mobile}{
+                width: 100%;
+                max-width: 100%;
+                padding-left: 18px;
+            }
+            .tmp_item_ic{
+                margin-bottom: 60px;
+                display: block;
+                @media #{$small_tab}{
+                    width: 35px;
+                    margin-bottom: 40px;
+                }
+            }
+            .tmp_item_title{
+                color: #FFF;
+                font-family: 'Trap';
+                font-size: 23px;
+                font-weight: 600;
+                line-height: 150%; /* 34.5px */
+                margin-bottom: 6px;
+                @media #{$small_laptop}{
+                    font-size: 21px;
+                }
+                @media #{$small_tab}{
+                    font-size: 20px;
+                    line-height: 130%;
+                }
+            }
+            .tmp_item_text{
+                color: #D1D1D1;
+                font-family: 'Inter';
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 150%; /* 24px */
+                @media #{$small_laptop}{
+                    font-size: 15px;
+                }
+                @media #{$small_tab}{
+                    font-size: 14px;
+                    line-height: 140%;
+                }
+            }
+        }
+    }
+}
+.tmp_img{
+    width: 100%;
+}
+.tmp_con{
+    position: relative;
+    margin-bottom: 125px;
+    @media #{$small_tab}{
+        margin-bottom: 70px;
+    }
+    .tmp_box{
+        position: absolute;
+        left: 60px;
+        bottom: 60px;
+        padding: 40px;
+        border-radius: 20px;
+        background: #A9F04A;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-width: 517px;
+        @media #{$small_laptop}{
+            max-width: 400px;
+            padding: 30px;
+            left: 40px;
+            bottom: 40px;
+        }
+        @media #{$big_tab}{
+            max-width: 315px;
+            padding: 25px 20px;
+            left: 30px;
+            bottom: 30px;
+        }
+        @media #{$small_tab}{
+            position: relative;
+            left: 0;
+            bottom: 0;
+            max-width: 100%;
+            margin-top: 35px;
+        }
+        .tmp_box_title{
+            color: #101010;
+            font-family: 'Trap';
+            font-size: 50px;
+            font-weight: 500;
+            line-height: 130%; /* 65px */
+            @media #{$small_laptop}{
+                font-size: 38px;
+            }
+            @media #{$big_tab}{
+                font-size: 32px;
+            }
+        }
+        .tmp_box_text{
+            color: #000;
+            font-family: 'Inter';
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 150%; /* 31.5px */
+            @media #{$small_laptop}{
+                font-size: 17px;
+            }
+            @media #{$big_tab}{
+                font-size: 15px;
+            }
+        }
+    }
+}

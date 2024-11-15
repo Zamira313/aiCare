@@ -1,0 +1,73 @@
+.networks {
+    display: flex;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    max-width: 812px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 125px;
+    @media #{$small_tab}{
+        margin-bottom: 70px;
+        max-width: 100%;
+    }
+    @media #{$small_mobile}{
+        margin-bottom: 50px;
+    }
+    &::before,
+    &::after {
+        // content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100px;
+        z-index: 1;
+        pointer-events: none; /* Allow scrolling without blocking */
+        background: linear-gradient(90deg, #101010 0%, rgba(16, 16, 16, 0.00) 50.42%, #101010 100%);
+    }
+
+    &::before {
+        left: 0;
+        background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        left: -10px;
+    }
+
+    &::after {
+        right: 0;
+        background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        right: -10px;
+    }
+    .network_content {
+        flex-shrink: 0;
+        display: flex;
+        justify-content: space-around;
+        min-width: 100%;
+        -webkit-animation: 30s linear infinite scroll;
+        animation: 30s linear infinite scroll;
+        gap: 90px;
+        align-items: center;
+        overflow: clip;
+        @media #{$small_tab}{
+            gap: 50px;
+        }
+        .network_item {
+            display: block;
+            &:last-child{
+                margin-right: 90px;
+                @media #{$small_tab}{
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+    @keyframes scroll {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(calc(-100% - 5px));
+        }
+    }
+}

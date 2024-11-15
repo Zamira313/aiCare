@@ -1,0 +1,153 @@
+.hero{
+    height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media #{$big_mobile}{
+        height: 100%;
+        padding-bottom: 140px;
+        padding-top: 100px;
+    }
+    .hero_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .hero_title{
+            color: #FFF;
+            text-align: center;
+            font-family: 'Trap';
+            font-size: 70px;
+            font-weight: 500;
+            line-height: 120%; /* 84px */
+            span{
+                color: #A9F04A;
+            }
+            margin-bottom: 20px;
+            &.mini{
+                font-size: 50px;
+                @media #{$small_laptop}{
+                    font-size: 45px;
+                }
+                @media #{$big_tab}{
+                    font-size: 41px;
+                    br{
+                        display: none;
+                    }
+                }
+                @media #{$small_tab}{
+                    font-size: 35px;
+                }
+                @media #{$big_mobile}{
+                    font-size: 28px;
+                }
+            }
+            @media #{$small_laptop}{
+                font-size: 65px;
+            }
+            @media #{$big_tab}{
+                font-size: 55px;
+            }
+            @media #{$small_tab}{
+                font-size: 42px;
+            }
+            @media #{$big_mobile}{
+                font-size: 28px;
+            }
+            @media #{$small_mobile}{
+                font-size: 24px;
+            }
+        }
+        .hero_subtitle{
+            color: #FFF;
+            text-align: center;
+            font-family: 'Inter';
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 150%; /* 31.5px */
+            margin-bottom: 60px;
+            max-width: 65%;
+            @media #{$small_laptop}{
+                font-size: 18px;
+            }
+            @media #{$small_tab}{
+                font-size: 16px;
+            }
+            @media #{$big_mobile}{
+                max-width: 100%;
+                font-size: 13px;
+                margin-bottom: 50px;
+            }
+            @media #{$small_mobile}{
+                font-size: 12px;
+            }
+        }
+        .hero_actions{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            @media #{$big_mobile}{
+                flex-direction: column;
+            }
+            .hero_btn_light{
+                color: #2E2E2E;
+                text-align: center;
+                font-family: 'Inter';
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 150%; /* 24px */
+                border-radius: 10px;
+                background: var(--Color-Brand-Primary, #A9F04A);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 14px 28px;
+                transition: all 0.4s ease-in-out;
+                border: 1px solid transparent;
+                @media #{$small_tab}{
+                    font-size: 14px;
+                    padding: 10px 25px;
+                }
+                &:hover {
+                    background-color: transparent; // Slightly darker green for hover
+                    color: #FDFCFD;
+                    border-color: #FDFCFD;
+                }
+            }
+            .hero_btn_black{
+                color: #FFF;
+                text-align: center;
+                font-family: 'Inter';
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 150%; /* 24px */
+                border-radius: 10px;
+                border: 1px solid #FDFCFD;
+                padding: 14px 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                transition: all 0.4s ease-in-out;
+                @media #{$small_tab}{
+                    font-size: 14px;
+                    padding: 10px 25px;
+                }
+                &:hover {
+                    color: #A9F04A; // Slightly darker green for hover
+                    border-color: #A9F04A;
+                    path{
+                        stroke: #A9F04A;
+                    }
+                }
+            }
+        }
+    }
+    &.overviewHero{
+        height: auto;
+        padding-bottom: 100px;
+        padding-top: 117px;
+        .mini_top_text{
+            margin-bottom: 32px;
+        }
+    }
+}
