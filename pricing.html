@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aiCare</title>
+    <!-- font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font Trap -->
+    <link rel="stylesheet" href="./assets/font/style.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body class="light_body">
+    <div class="wrapper">
+        <main id="up">
+            <header class="white_header">
+                <div class="container">
+                    <div class="header_block">
+                        <a href="#" class="h_logo"><img src="./assets/imgs/logo_black.svg" alt=""></a>
+                        <nav class="h_nav desc_nav">
+                            <ul class="h_ul desc">
+                                <li class="dropdown">
+                                    <button class="dropbtn">Our Platform <img src="./assets/imgs/arr_h_menu_black.svg" alt=""></button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <button class="dropbtn">Resources <img src="./assets/imgs/arr_h_menu_black.svg" alt=""></button>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Company</a></li>
+                            </ul>
+                            <a href="#" class="h_btn desc">Easy Start, Now</a>
+                        </nav>
+                        <div class="bars_menu">
+                            <a href="#">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <div class="mobile_menu">
+                            <nav class="h_nav mob_nav">
+                                <ul class="h_ul mob">
+                                    <li class="dropdown">
+                                        <button class="dropbtn">Our Platform <img src="./assets/imgs/arr_h_menu_black.svg" alt=""></button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Link 1</a>
+                                            <a href="#">Link 2</a>
+                                            <a href="#">Link 3</a>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown">
+                                        <button class="dropbtn">Resources <img src="./assets/imgs/arr_h_menu_black.svg" alt=""></button>
+                                        <div class="dropdown-content">
+                                            <a href="#">Link 1</a>
+                                            <a href="#">Link 2</a>
+                                            <a href="#">Link 3</a>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Company</a></li>
+                                </ul>
+                                <a href="#" class="h_btn mob">Easy Start, Now</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </main>
+
+        <section class="pricing">
+            <div class="container mini">
+                <div class="section_top_content">
+                    <div class="mini_top_text">
+                        <span></span>flexibile pricing
+                    </div>
+                    <h1 class="section_title">Our pricing options</h1>
+                    <p class="section_subtitle mini">
+                        Whether you're just starting out or looking for a robust solution for your <br> well-established business, we have a package for you.
+                    </p>
+                </div>
+
+                <div class="tab-container">
+                    <button class="tab-button active" data-tab="cloud">Cloud SaaS</button>
+                    <button class="tab-button" data-tab="enterprise">Enterprise</button>
+                </div>
+                <div class="tab-content">
+                    <div id="cloud" class="content active">
+                        <div class="pricing_item">
+                            <div class="card starter">
+                                <h3>STARTER</h3>
+                                <div class="price">
+                                    <span>$399</span>
+                                    $379/month billed annually
+                                    <p>
+                                        Small businesses and startups ready to explore AI-driven customer support.
+                                    </p>
+                                </div>
+                                <ul>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> 1 agent</li>
+                                    <li>
+                                        <img src="./assets/imgs/check.svg" alt="">
+                                        <span class="hover-info">
+                                            1,000 messages/month
+                                            <span class="tooltip">
+                                                Expand your messaging capacity with an additional 10,000 messages per month for only $55.
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> No database connections</li>
+                                    <li>
+                                        <img src="./assets/imgs/check.svg" alt="">
+                                        <span class="hover-info">
+                                            50 MB of indexed data
+                                            <span class="tooltip">Handle more data with an upgrade to 250 MB.</span>
+                                        </span>
+                                    </li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Single language support</li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Auto learning from documents and sheets</li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Basic dense search indexing</li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Managed hosting included</li>
+                                </ul>
+                                <a href="#" class="btn-signup open-form-button">Sign up now</a>
+                            </div>
+                        </div>
+                        <div class="pricing_item blue_card">
+                            <div class="card starter">
+                                <h3>Business Cloud</h3>
+                                <div class="price">
+                                    <span>Contact us</span>
+                                    <p>
+                                        Well-established businesses ready to leverage AI across customer engagement and internal operations.
+                                    </p>
+                                </div>
+                                <ul>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Multi-Agent support</li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> 10,000 messages/month</li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Supports up to 3 languages</li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Auto learning from documents, sheets, and databases</li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> 250 MB of indexed data</li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Dense search, embedding, and graph indexing</li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> 1 database connection</li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Site crawling included</li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Requires customer-managed infrastructure</li>
+                                </ul>
+                                <a href="#" class="btn-signup open-form-button">Contact us</a>
+                            </div>
+                        </div>
+                        <div class="pricing_item w_100">
+                            <div class="card starter">
+                                <div class="pricing_item_left">
+                                    <h3>Coming soon on January 24, 2025</h3>
+                                    <div class="price">
+                                        <span>Profesional plan</span>
+                                        <p>
+                                            High-end package with advanced integrations, priority support, and <br> additional customization features.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="pricing_item_right">
+                                    <a href="#" class="btn-signup open-form-button">Register Now</a>
+                                    <div class="small_p">
+                                        Register and get 15% discount
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="enterprise" class="content">
+                        <div class="pricing_item">
+                            <div class="card starter">
+                                <div class="price">
+                                    <span class="mini_sp">On-Premises Deployment</span>
+                                    <p>
+                                        The aiCare Enterprise License is designed for large organizations that require a scalable, secure, and highly customizable AI assistant solution deployed directly on their premises.
+                                    </p>
+                                </div>
+                                <ul>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> On-Premises Deployment <a href="#"><img src="./assets/imgs/info.svg" alt=""></a></li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Multi-Agent Support <a href="#"><img src="./assets/imgs/info.svg" alt=""></a></li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> LLM Options <a href="#"><img src="./assets/imgs/info.svg" alt=""></a></li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Advanced Integrations <a href="#"><img src="./assets/imgs/info.svg" alt=""></a></li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Unlimited Plugins <a href="#"><img src="./assets/imgs/info.svg" alt=""></a></li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Custom Role-Based Permissions <a href="#"><img src="./assets/imgs/info.svg" alt=""></a></li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Site Crawling and Advanced Indexing <a href="#"><img src="./assets/imgs/info.svg" alt=""></a></li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> On-Prem Hosting <a href="#"><img src="./assets/imgs/info.svg" alt=""></a></li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Custom AI Training <a href="#"><img src="./assets/imgs/info.svg" alt=""></a></li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Scalability and High Availability <a href="#"><img src="./assets/imgs/info.svg" alt=""></a></li>
+                                    <li><img src="./assets/imgs/check.svg" alt=""> Dedicated Support and Maintenance <a href="#"><img src="./assets/imgs/info.svg" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing_item blue_card">
+                            <div class="card starter">
+                                <div class="price">
+                                    <h3>enterprise license</h3>
+                                    <span>Pricing</span>
+                                    <p>
+                                        The Enterprise License is based on a <b>custom pricing</b> model that reflects the specific needs of your organization, including the number of users, data requirements, integrations, and setup complexity.
+                                    </p>
+                                </div>
+                                <div class="pricing_item_bottom">
+                                    <p>Have any question?</p>
+                                    <a href="#" class="btn-signup open-form-button">Request a Consultation</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing_item w_100 gorizontal_item">
+                            <div class="card starter">
+                                <div class="pricing_item_title mini">Why On-Premises AI Deployment?</div>
+                                <ul class="pricing_item_ul gorizontal_ul">
+                                    <li><img src="./assets/imgs/check.svg" alt="">Unparalleled Security</li>
+                                    <li><img src="./assets/imgs/check.svg" alt="">Customizability</li>
+                                    <li><img src="./assets/imgs/check.svg" alt="">Scalable & Future-Proof</li>
+                                    <li><img src="./assets/imgs/check.svg" alt="">Ongoing Innovation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="do_more_block">
+                    <div class="do_more_item">
+                        <h1>Do more <br> with addons</h1>
+                    </div>
+                    <div class="do_more_item">
+                        <h5>10,000 Messages Pack</h5>
+                        <p>
+                            Expand your messaging capacity with an additional 10,000 messages per month for only $55. Perfect for businesses that handle high volumes of customer queries.
+                        </p>
+                    </div>
+                    <div class="do_more_item">
+                        <h5>1 Additional Agent</h5>
+                        <p>
+                            Need more agents to handle different functions? Add an agent to your package for $50/month.
+                        </p>
+                    </div>
+                    <div class="do_more_item">
+                        <h5>100 MB Additional Data</h5>
+                        <p>
+                            If you need more storage for indexed data, add an additional 100 MB of data storage for just $50/month.
+                        </p>
+                    </div>
+                    <div class="do_more_item">
+                        <h5>1 Additional Database Connection</h5>
+                        <p>
+                            Expand your integration capabilities with another database connection for $50/month, ideal for businesses with more complex data needs.
+                        </p>
+                    </div>
+                    <div class="do_more_item">
+                        <h5>1 Additional User</h5>
+                        <p>
+                            Add an extra user to your aiCare platform for $15/month, allowing more team members to take advantage of aiCare’s powerful AI tools.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="industries">
+            <div class="container">
+                <div class="enterprise_section">
+                    <div class="mini_top_text white">
+                        <span></span> enterprise license
+                    </div>
+                    <div class="section_title white">
+                        Why aiCare for On-Premises AI Deployment
+                    </div>
+                    <div class="enterprise_section_block">
+                        
+                        <div class="enterprise_item">
+                            <h3>01</h3>
+                            <div class="enterprise_item_content">
+                                <h5>Unparalleled Security</h5>
+                                <p>
+                                    Ensure full control over your data with on-premise hosting, perfect for industries where privacy is paramount.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="enterprise_item">
+                            <h3>02</h3>
+                            <div class="enterprise_item_content">
+                                <h5>Customizability</h5>
+                                <p>
+                                    Tailor aiCare to your organization’s exact specifications, from workflow automation to specialized integrations.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="enterprise_item">
+                            <h3>03</h3>
+                            <div class="enterprise_item_content">
+                                <h5>Scalable & Future-Proof</h5>
+                                <p>
+                                    As your business grows, aiCare scales with you, ensuring long-term value and ROI.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="enterprise_item">
+                            <h3>04</h3>
+                            <div class="enterprise_item_content">
+                                <h5>Ongoing Innovation</h5>
+                                <p>
+                                    Stay ahead of AI advancements with continual system updates and access to the latest AI technologies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="supported_section">
+                    <div class="mini_top_text white">
+                        <span></span> supported industries
+                    </div>
+                    <div class="section_title white">
+                        Industries empowered by aiCare Enterprise
+                    </div>
+                    <div class="supported_section_block">
+                        <div class="industries__item">
+                            <h5>Finance and Banking</h5>
+                            <p>
+                                Maintain stringent data security while automating customer service, account inquiries, and internal communications across departments.
+                            </p>
+                            <div class="industries_ic">
+                                <img src="./assets/imgs/finance.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="industries__item">
+                            <h5>Healthcare</h5>
+                            <p>
+                                Safeguard sensitive patient information and ensure HIPAA compliance while improving patient engagement and care coordination.
+                            </p>
+                            <div class="industries_ic">
+                                <img src="./assets/imgs/healtcare.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="industries__item">
+                            <h5>Government</h5>
+                            <p>
+                                Deliver secure, AI-driven support for internal operations and public services, while adhering to local and international regulatory requirements.
+                            </p>
+                            <div class="industries_ic">
+                                <img src="./assets/imgs/government.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="industries__item black">
+                            <h5>Education</h5>
+                            <p>
+                                Provide AI-powered student support while ensuring privacy and security for both students and staff.
+                            </p>
+                            <div class="industries_ic">
+                                <img src="./assets/imgs/edu.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="industries__item">
+                            <h5>Telecom</h5>
+                            <p>
+                                Automate large-scale customer support while maintaining strict privacy standards.
+                            </p>
+                            <div class="industries_ic">
+                                <img src="./assets/imgs/telecom.svg" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="use_case still_not">
+            <div class="container">
+                <div class="section_top_content get_started">
+                    <div class="mini_top_text white">
+                        <span></span> Get Started
+                    </div>
+                    <div class="section_title white">
+                        Still not sure <br> what to do? 
+                    </div>
+                    <div class="section_actions">
+                        <a href="#" class="section_btn light">
+                            Contact us
+                        </a>
+                        <a href="#" class="section_btn black white">
+                            Explore Features
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                <path d="M8.00004 5C8.00004 5 13 8.68242 13 10C13 11.3177 8 15 8 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer_block">
+                    <nav>
+                        <ul>
+                            <li>Quick Links</li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                        <ul>
+                            <li>Our platform</li>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">Our Platform</a></li>
+                            <li><a href="#">Company</a></li>
+                        </ul>
+                        <ul>
+                            <li>Our platform</li>
+                            <li><a href="#">Book a demo</a></li>
+                            <li><a href="#">aiCare overview</a></li>
+                            <li><a href="#">Integrations</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="f_actions">
+                        <li>
+                            <a href="#">Location: Lorem, Ipsum</a>
+                        </li>
+                        <li>
+                            <a href="#">Tel: 575 - XXX - XXX</a>
+                        </li>
+                        <li>
+                            <a href="#">Email: info@loremipsum.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <a href="#" class="confirm">© 2024 aiCare, All rights Reserved.</a>
+                    <ul class="social_net">
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#up" class="go_up">go up <img src="./assets/imgs/go_up_arr.svg" alt=""></a>
+        </footer>
+
+
+       
+
+        <!-- MODAL -->
+        <div class="overlay" id="overlay">
+            <div class="contact-form" id="contactForm">
+                <h2>Connect with our experts</h2>
+                <p>
+                    Ask us anything and discuss your requirements, pricing and other details with one of our experts of your industry.
+                </p>
+                <form>
+                    <label for="fullName">Full name
+                        <input type="text" id="fullName" placeholder="Full name" required>
+                    </label>
+                    <label for="company" class="w_50">Company <span>(optional)</span>
+                        <input type="text" id="company" placeholder="Company name">
+                    </label>
+                    <label for="industry" class="w_50">Your Industry
+                        <select id="industry" required>
+                            <option value="">Choose industry</option>
+                            <option value="industry1">Industry one</option>
+                            <option value="industry2">Industry two</option>
+                            <option value="industry3">Industry three</option>
+                            <option value="industry4">Industry four</option>
+                            </select>
+                    </label>
+                    <label for="phone">Phone <span>(optional)</span>
+                        <input type="tel" id="phone" placeholder="Your business or private number">
+                    </label>
+                    <label for="message">Message
+                        <textarea id="message" placeholder="Write anything" required></textarea>
+                    </label>
+                    <button type="submit" id="sendMessage">Send Message</button>
+                </form>
+            </div>
+        </div>
+          
+        <!-- <button id="openFormButton" class="open-form-button">Open Contact Form</button> -->
+          
+
+        <!-- <a href="#up" class="go_up">go up <img src="./assets/imgs/go_up_arr.svg" alt=""></a> -->
+    </div>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS scroll anim -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- main js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
